@@ -5,18 +5,18 @@ Overview of how this application works
 
 BACKEND code explanation 
 
-1.installed required packages 
-# npm install bcrypt cookie-parser cors dotenv express jsonwebtoken mongoose morgan nodemon
+# 1.installed required packages 
+ npm install bcrypt cookie-parser cors dotenv express jsonwebtoken mongoose morgan nodemon
 
-2.initiate the project
-# npm init
+# 2.initiate the project
+ npm init
 
-3.Created .env 
-# pasted mongo connect url
-# PORT number
+# 3.Created .env 
+ pasted mongo connect url
+ PORT number
 and created utils/config - to store .env to variable
 
-4.created index.js 
+# 4.created index.js 
     entry point
     import mongoose
     express from app.js
@@ -24,38 +24,38 @@ and created utils/config - to store .env to variable
     connect to database and listen to port
 
 
-5.created app.js
+# 5.created app.js
     to save server related 
     express should to installed 
     import and export express as app
 
 npm run dev to run backend
 
-6. Created Models
-# user
-with user credentials
+# 6. Created Models
+ user :
+ with user credentials
 email, password, name, location
  
-# property
+ property :
 with property credentials
 property type, location, price, description, status
 
-7. created Controllers
-# userControllers
+# 7. created Controllers
+ userControllers :
 the method for register,login,getUserupdateUser,deleteUser,logoutgetAllUsers,deleteUser is written here and used in userRoutes for user actions
 
-# propertyControllers
+ propertyControllers :
 the methods for createProperty,getProperties,searchProperties,getPropertyById,updateProperty,deleteProperty,getAllProperties is written here 
 
-8. created routes
-# userRoutes
+# 8. created routes
+ userRoutes :
 created routes for users with auth middlewares
 
-# PropertyRoutes
+ PropertyRoutes :
 created routes for all property with auth midlleware 
 
-9. in app.js
-# add all the endpoints and routers with cors to connect with backend
+# 9. in app.js
+add all the endpoints and routers with cors to connect with backend
 
 
 
@@ -63,11 +63,11 @@ created routes for all property with auth midlleware
 
 FRONTEND code explanation 
 
-1. create react app
-# npx create-react-app frontend
+# 1. create react app
+ npx create-react-app frontend
 
-2.install all required packages
-# npm install @mui/material @emotion/react @emotion/styled bootstrap react-bootstrap react-router-dom axios
+# 2.install all required packages
+ npm install @mui/material @emotion/react @emotion/styled bootstrap react-bootstrap react-router-dom axios
 
 3.components/
 # Navbar.js: 
